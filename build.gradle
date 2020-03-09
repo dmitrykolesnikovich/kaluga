@@ -1,5 +1,5 @@
 buildscript {
-    ext.kotlin_version = '1.3.61'
+    ext.kotlin_version = '1.3.70'
     repositories {
         google()
         jcenter()
@@ -19,6 +19,10 @@ plugins {
     id 'kotlin-multiplatform'
     id 'maven-publish'
 }
+
+
+def jvmArguments = [project.findProperty("platformLibsJvmArgs") ?: "-Xmx6G"]
+ext.jvmArgs = jvmArguments.join(" ")
 
 allprojects {
 

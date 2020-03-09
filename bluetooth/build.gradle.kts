@@ -12,10 +12,6 @@ apply(from = "../gradle/publishable_component.gradle")
 group = "com.splendo.kaluga"
 version = ext["library_version"]!!
 
-repositories {
-    maven("https://dl.bintray.com/pocketbyte/hydra/")
-}
-
 dependencies {
     implementation("no.nordicsemi.android.support.v18:scanner:1.4.2")
     testImplementation("org.mockito:mockito-core:2.28.2")

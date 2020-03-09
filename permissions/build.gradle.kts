@@ -14,10 +14,6 @@ group = "com.splendo.kaluga"
 version = ext["library_version"]!!
 val kotlinx_coroutines_version = ext["kotlinx_coroutines_version"]!!
 
-repositories {
-    maven("https://dl.bintray.com/pocketbyte/hydra/")
-}
-
 dependencies {
     implementation("org.jetbrains.kotlinx:kotlinx-coroutines-core:$kotlinx_coroutines_version")
     testImplementation("org.jetbrains.kotlinx:kotlinx-coroutines-debug:$kotlinx_coroutines_version")

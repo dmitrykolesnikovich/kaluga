@@ -12,7 +12,6 @@ version = gradle.library_version
 
 repositories {
     google()
-    maven { url = "https://dl.bintray.com/pocketbyte/hydra/" }
     mavenCentral()
 }
 
